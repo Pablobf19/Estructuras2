@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class ModificarEdad {
-    public LinkedList<Empleado> empleados(LinkedList<Empleado> empleados){
+    public LinkedList<Empleado> Edad(LinkedList<Empleado> empleados){
        
         for (Empleado item : empleados) {
             if (item.getEdad() < 18) {
@@ -12,6 +12,6 @@ public class ModificarEdad {
             }
         }
        
-        return null;
+        return empleados;
     }
 }
