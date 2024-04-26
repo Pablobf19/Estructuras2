@@ -7,7 +7,7 @@ public class Proyecto {
         
         LinkedList<Empleado> empleados = new LinkedList<>();
         Scanner sc = new Scanner(System.in);
-
+        ModificarEdad me = new ModificarEdad();
         for (int i = 0; i < 3; i++) {
             Empleado item = new Empleado();
             System.out.println("Ingrese el nombre del Empleado: ");
@@ -23,6 +23,8 @@ public class Proyecto {
             empleados.add(item);
         }
         String cadena ="";
+
+        empleados = me.Edad(empleados);
 
         for (Empleado empleado : empleados) {
             cadena = cadena + empleado.getNombre() + "\n" + empleado.getApellido() + "\n" + empleado.getDireccion() + "\n" +
