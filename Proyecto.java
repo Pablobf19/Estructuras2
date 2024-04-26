@@ -10,7 +10,7 @@ public class Proyecto {
 
         for (int i = 0; i < 3; i++) {
             Empleado item = new Empleado();
-            System.out.println("Ingrese el nombre del empleado: ");
+            System.out.println("Ingrese el nombre del Empleado: ");
             item.setNombre(sc.next());
             System.out.println("Ingrese el apellido del empleado: ");
             item.setApellido(sc.next());
